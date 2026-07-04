@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       SEO / METADATA
+       Replace the placeholder canonical URL and og:image once the
+       site is live. og-image.png should be dropped into
+       /assets/images/ at 1200x630px.
+  ============================================================ -->
+  <title>Emad | Data Analyst</title>
+  <meta name="description" content="Emad Uddin Jazib Khan — Business Intelligence Engineer & Data Analyst specializing in Power BI, SQL, Azure Data Factory, and Microsoft Fabric across HR, Finance, and Shipping & Logistics reporting.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Emad | Data Analyst">
+  <meta property="og:description" content="Business Intelligence Engineer & Data Analyst — Power BI, SQL, DAX, Azure Data Factory, Microsoft Fabric.">
+  <meta property="og:image" content="/assets/images/og-image.png"><!-- PLACEHOLDER: add a 1200x630 image here -->
+  <meta property="og:url" content="https://your-domain-placeholder.com/"><!-- PLACEHOLDER: replace with live URL -->
+
+  <link rel="canonical" href="https://your-domain-placeholder.com/"><!-- PLACEHOLDER: replace with live URL -->
+
+  <!-- Inline SVG favicon: no external file, no CDN-generated icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230B1220'/%3E%3Crect x='10' y='24' width='7' height='16' rx='1.5' fill='%2314B8A6' opacity='0.6'/%3E%3Crect x='20.5' y='12' width='7' height='28' rx='1.5' fill='%2314B8A6'/%3E%3Crect x='31' y='18' width='7' height='22' rx='1.5' fill='%2314B8A6' opacity='0.85'/%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Skip link for keyboard/screen reader users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Primary">
+      <a href="#home" class="navbar__brand">Emad <span class="navbar__brand-divider">|</span> Data Analyst</a>
+
+      <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="#home" class="navbar__link">Home</a></li>
+        <li class="navbar__item--dropdown">
+          <button class="navbar__link navbar__dropdown-toggle" id="skillsDropdownToggle" aria-expanded="false" aria-controls="skillsDropdown">
+            Skills
+            <svg class="navbar__caret" viewBox="0 0 16 16" width="10" height="10" aria-hidden="true"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="navbar__dropdown" id="skillsDropdown">
+            <li><a href="#skills" data-skill="powerbi">Power BI</a></li>
+            <li><a href="#skills" data-skill="excel">Excel</a></li>
+            <li><a href="#skills" data-skill="python">Python</a></li>
+            <li><a href="#skills" data-skill="fabric">Microsoft Fabric</a></li>
+          </ul>
+        </li>
+        <li><a href="#projects" class="navbar__link">Projects</a></li>
+        <li><a href="#contact" class="navbar__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         HERO SECTION
+    ============================================================ -->
+    <section id="home" class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <!-- Power BI / dashboard-inspired inline SVG background graphic -->
+        <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+              <path d="M 48 0 L 0 0 0 48" fill="none" stroke="var(--color-accent)" stroke-width="0.5" opacity="0.12"/>
+            </pattern>
+            <linearGradient id="barFade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="var(--color-accent)" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="var(--color-accent)" stop-opacity="0.05"/>
+            </linearGradient>
+          </defs>
+          <rect width="1200" height="800" fill="url(#grid)"/>
+
+          <!-- bar chart cluster -->
+          <g class="hero__bars">
+            <rect x="760" y="560" width="34" height="120" rx="3" fill="url(#barFade)" class="hero__bar" style="--d:0"/>
+            <rect x="810" y="500" width="34" height="180" rx="3" fill="url(#barFade)" class="hero__bar" style="--d:1"/>
+            <rect x="860" y="440" width="34" height="240" rx="3" fill="url(#barFade)" class="hero__bar" style="--d:2"/>
+            <rect x="910" y="480" width="34" height="200" rx="3" fill="url(#barFade)" class="hero__bar" style="--d:3"/>
+            <rect x="960" y="410" width="34" height="270" rx="3" fill="url(#barFade)" class="hero__bar" style="--d:4"/>
+            <rect x="1010" y="520" width="34" height="160" rx="3" fill="url(#barFade)" class="hero__bar" style="--d:5"/>
+          </g>
+
+          <!-- trend line -->
+          <polyline class="hero__trendline" points="760,470 810,430 860,380 910,410 960,340 1010,400 1060,360"
+            fill="none" stroke="var(--color-accent)" stroke-width="2.5" opacity="0.65" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="1060" cy="360" r="4.5" fill="var(--color-accent)" opacity="0.9"/>
+
+          <!-- donut ring, top-left of hero -->
+          <circle cx="150" cy="160" r="70" fill="none" stroke="var(--color-accent)" stroke-width="16" opacity="0.15"/>
+          <circle cx="150" cy="160" r="70" fill="none" stroke="var(--color-accent)" stroke-width="16"
+            stroke-dasharray="180 260" stroke-linecap="round" opacity="0.5" transform="rotate(-90 150 160)"/>
+        </svg>
+      </div>
+
+      <div class="hero__content fade-in">
+        <p class="hero__eyebrow">Business Intelligence Engineer / Data Analyst</p>
+        <h1 class="hero__name">Emad Uddin Jazib Khan</h1>
+        <p class="hero__summary">
+          I'm a Business Intelligence Engineer / Data Analyst based in Dubai, UAE, with around
+          six years of experience turning raw operational data into decisions people actually
+          act on. My day-to-day spans SQL, Power BI, DAX, Azure Data Factory, and Microsoft Fabric,
+          applied across HR, Finance, and Shipping &amp; Logistics reporting. I care most about
+          reports that stay fast and correct as the data grows, not just ones that look good on
+          day one.
+        </p>
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+         Cards rendered dynamically by renderSkills() from data.js
+    ============================================================ -->
+    <section id="skills" class="section skills">
+      <div class="section__header fade-in">
+        <p class="section__eyebrow">Skills</p>
+        <h2 class="section__title">Tools I use to get from raw data to a decision</h2>
+      </div>
+      <div class="skills__grid" id="skillsGrid">
+        <!-- Skill cards injected here by script.js -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         Cards rendered dynamically by renderProjects() from data.js
+    ============================================================ -->
+    <section id="projects" class="section projects">
+      <div class="section__header fade-in">
+        <p class="section__eyebrow">Projects</p>
+        <h2 class="section__title">A few things I've built and fixed</h2>
+      </div>
+      <div class="projects__grid" id="projectsGrid">
+        <!-- Project cards injected here by script.js -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         Items rendered dynamically by renderContact() from data.js
+    ============================================================ -->
+    <section id="contact" class="section contact">
+      <div class="section__header fade-in">
+        <p class="section__eyebrow">Contact</p>
+        <h2 class="section__title">Let's talk about your data</h2>
+        <p class="section__subtitle">Open to Senior Data Analyst / BI roles — reach out through any of the below.</p>
+      </div>
+      <ul class="contact__list fade-in" id="contactList">
+        <!-- Contact items injected here by script.js -->
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Emad Uddin Jazib Khan</p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
